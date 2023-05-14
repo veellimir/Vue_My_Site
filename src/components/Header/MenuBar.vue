@@ -28,7 +28,8 @@ export default {
 }
 .menu_popup {
     position: absolute;
-    right: -95px;
+    right: 94px;
+    top: 90px;
     width: 40vh;
     height: 30vh;
     background-color: #29343E;
