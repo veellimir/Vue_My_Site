@@ -1,22 +1,5 @@
 <template>
     <main class="main_content">
-        <!-- Окно регистрации -->
-        <!-- <div class="sign_in_popup" v-bind="sigin_window">
-            <div>
-                <img src="@/assets/rect_block_name_main.png" alt="Ошибка изображение">
-            </div>
-            <div class="sign_in_popup_options">
-                <h3 style="font-size: 20px;">войти</h3>
-                <button>Войти через Google</button>
-                <button>Войти через Yandex</button>
-                <button>Войти с помощью электронной почты</button>
-            </div>
-            <div class="no_user">
-                <p>Нет учётной записи ?</p>
-                <button>Зарегистрироваться</button>
-            </div>
-        </div> -->
-        <!-- Конец окна регистрации -->
         <div class="block_main_content">
             <div class="main_content_descript">
                 <h2>Экскурсии и туры</h2>
@@ -35,8 +18,8 @@
         </div>
         <div class="block_about_btn">
             <button style="background-color: #FFBD4E;">КТО МЫ?</button>
-            <button>ЧТО МЫ ДЕЛАЕМ?</button>
-            <button>КТО наши клиенты?</button>
+            <button><h3>ЧТО МЫ</h3><h4>ДЕЛАЕМ?</h4></button>
+            <button><h3>КТО наши</h3><h4>клиенты?</h4></button>
         </div>
     </div>
     <div class="block_about">
@@ -140,7 +123,6 @@ span {
     position: relative;
     left: 50%;
     transform: translate(-50%);
-    background: aqua;
     width: 75%;
     height: auto;
     margin-top: 70px;
