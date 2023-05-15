@@ -3,10 +3,6 @@
     <div class="imgLoader"></div>
 
     <div class="container">
-      <h1 class="title">Turning pages<br />with css</h1>
-
-      <div class="credit">* Images loaded randomly from Picsum.photos</div>
-
       <div class="book">
         <div class="gap"></div>
         <div class="pages">
@@ -34,10 +30,6 @@
         </div>
       </div>
     </div>
-
-    <a href="https://twitter.com/amit_sheen" class="twitterLink" target="_top">
-      <img src="https://assets.codepen.io/1948355/twitterLogo2.png" />
-    </a>
   </body>
 </template>
 
@@ -93,7 +85,6 @@ body {
 .container {
   position: relative;
   width: 420px;
-  border: #fff solid 2px;
   border-radius: 4px;
   height: 420px;
 }
@@ -126,8 +117,8 @@ body {
 }
 
 .page {
-  width: 210px;
-  height: 300px;
+  width: 510px;
+  height: 400px;
   background-color: #bbb;
   position: absolute;
   top: 0px;
@@ -218,8 +209,8 @@ body {
 }
 
 .flip {
-  width: 32px;
-  height: 300px;
+  width: 83px;
+  height: 400px;
   position: absolute;
   top: 0px;
   transform-origin: 100% 100%;
