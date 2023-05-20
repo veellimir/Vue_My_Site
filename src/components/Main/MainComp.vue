@@ -1,177 +1,270 @@
 <template>
-  <main class="main_content">
-    <div class="block_name_main">
-      <img src="@/assets/rect_block_name_main.png" alt="Ошибка изображение" />
-      <div class="block_number">
-        <h1>02<span>/08</span></h1>
-      </div>
+  <div className='content'>
+    <HeaderComp />
+    <div className='content_right'>
+      <img src='@/assets/dmitriy-7.png' id='girl_img' />
+      <img src='@/assets/girl_1.png' id='girl_img2_end' />
+      <img src='@/assets/girl_2.png' id='girl_img3' />
     </div>
-    <div class="block_main_content">
-      <div class="main_content_descript">
-        <h2>Экскурсии и туры</h2>
-        <span> на Камчатку</span>
-      </div>
-      <img src="@/assets/main_img.jpg" id="img_main" alt="Ошибка изображение" />
-    </div>
-  </main>
-  <div class="block_about">
-    <div class="block_about_name">
-      <p>О компании</p>
+    <div className='content_left'>
+      <h1>Новые поступления <br /> в этом сезоне</h1>
+      <p>Утонченные сочетания и бархатные оттенки - вот то, что вы искали в этом сезоне. Время исследовать.</p>
       <div>
-        <h3>НЕМНОГО</h3>
-        <h4>О НАШЕЙ КОМПАНИИ</h4>
-      </div>
-    </div>
-    <div class="block_about_btn">
-      <button style="background-color: #ffbd4e">КТО МЫ?</button>
-      <button>
-        <h3>ЧТО МЫ</h3>
-        <h4>ДЕЛАЕМ?</h4>
-      </button>
-      <button>
-        <h3>КТО наши</h3>
-        <h4>клиенты?</h4>
-      </button>
-    </div>
-  </div>
-  <div class="block_about">
-    <div class="block_about_name">
-      <p>О компании</p>
-      <div id="block_about_name">
-        <h3>
-          БЛИЖАЙШИЕ
-          <h4>ТУРЫ</h4>
-        </h3>
-      </div>
-    </div>
-  </div>
-  <div class="block_about">
-    <div class="block_about_name">
-      <p>О компании</p>
-      <div id="block_about_name">
-        <h3>наши</h3>
-        <h4>гиды</h4>
-      </div>
-    </div>
-    <SliderBookComp></SliderBookComp>
-  </div>
-  <div class="block_about">
-    <div class="block_about_name">
-      <p>Публикации</p>
-      <div id="block_about_name">
-        <h3>ИДЕИ</h3>
-        <h4>ПУТЕШЕСТВИЙ</h4>
+        <img src='@/assets/Frame_9.png' />
+        <button>Открыть магазин</button>
       </div>
     </div>
   </div>
 </template>
 
 <script>
-import SliderBookComp from '../ComponentComp/SliderBookComp.vue';
+import HeaderComp from '../Header/HeaderComp.vue';
 
 export default {
-    data() {
-        return {};
-    },
-    methods: {},
-    components: { SliderBookComp }
+  data() {
+    return {};
+  },
+  components: {
+    HeaderComp
+  },
+  methods: {},
 };
 </script>
 
 <style scoped>
-* {
-  background-color: transparent;
-}
-.block_name_main {
+/* контент */
+.content_right {
+  width: 705px;
+  height: 826px;
+  background: #F1EADC;
   position: absolute;
-  left: 10%;
+  right: 0;
   top: 0;
-  width: 310px;
-  height: 342px;
-  padding-top: 50px;
-  background-color: #29343e;
+  z-index: -1;
 }
-.block_name_main {
-  padding-right: 50px;
-}
-.block_name_main span {
-  font-size: 42px;
-  color: gray;
-}
-.block_number {
-  text-align: right;
-  margin-top: 50px;
-}
-span {
-  font-size: 70px;
-  text-transform: uppercase;
-  color: #ffff;
-  font-weight: 700;
-}
-
-.block_main_content {
-  width: 100%;
-}
-
-#img_main {
-  width: 80%;
-  height: 80vh;
-  object-fit: cover;
-  margin-left: 20%;
-}
-
-.main_content_descript {
+#girl_img {
+  width: 434px;
+  height: 652px;
   position: absolute;
-  left: 50%;
-  top: 50%;
+  top: 120px;
+  left: 40px;
+}
+#girl_img2_end {
+  position: relative;
+  top: 550px;
+  right: 80px;
+}
+#girl_img3 {
+  position: relative;
+  left: 200px;
+  top: 100px;
+}
+.content_left {
+  float:left;
+  position: relative;
+  top: 200px;
+  left: 20%;
+  transform: translate(-20%);
+}
+.content_left h1 {
+  font-family: 'Raleway';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 55px;
+  line-height: 110%;
+  letter-spacing: 0.02em;
+  color: #000000;
+}
+.content_left p {
+  width: 385px;
+  height: 84px;
+  font-family: 'Raleway';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 140%;
   text-align: right;
-  text-shadow: 0px -32px 3px rgba(1, 3, 6, 0.5);
+  letter-spacing: 0.02em;
+  color: #000000;
+  margin-top: 40px;
 }
-
-.block_about {
-  position: relative;
-  left: 50%;
-  transform: translate(-50%);
-  width: 75%;
-  height: auto;
-  margin-top: 70px;
-}
-
-.block_about_name {
+.content_left button {
   display: flex;
-}
-
-.block_about_name div {
-  margin-left: 40px;
-}
-
-#block_about_name {
-  display: flex;
-}
-
-#block_about_name h4 {
-  margin-left: 10px;
-}
-
-.block_about_btn {
-  display: flex;
-  position: relative;
-  left: 120px;
-}
-
-.block_about_btn button {
-  text-transform: uppercase;
-  text-align: left;
-  width: 25%;
+  padding: 22px 50px;
+  width: 243px;
   height: 68px;
-  padding-left: 20px;
-  margin-left: 20px;
-  color: #29343e;
-  font-size: 25px;
-  font-weight: 600;
-  background-color: rgba(0, 0, 0, 0.14);
-  border: 1px solid #ffbd4e;
-  border-radius: 16px;
+  background: #6E9C9F;
+  border: none;
+  margin: 50px 140px;
+  position: relative;
   cursor: pointer;
+  font-family: 'Raleway';
+  font-weight: 400;
+  font-size: 17px;
+  line-height: 138.9%;
+  text-align: center;
+  letter-spacing: 0.02em;
+  color: #FFFFFF;
+  transition: color, transform 500ms ease;
+  
+}
+.content_left button:hover {
+  transform: scale(1.01);
+    background: #509498;
+}
+.content_left img {
+  width: 68px;
+  height: 68px;
+  position: absolute;
+  left: 80px;
+  cursor: pointer;
+}
+@media(max-width: 1434px) {
+    .content_right {
+        width: 550px;
+        height: 730px;
+    }
+    #girl_img {
+        width: 334px;
+        height: 552px;
+    }
+    #girl_img2 {
+        position: relative;
+        top: 450px;
+        right: 70px;
+        
+    }
+    #girl_img3 {
+        position: relative;
+        left: 100px;
+        top: 60px;
+        width: 150px;
+    }
+}
+@media(max-width: 1256px) {
+    .nav li {
+        margin-right: 50px;
+    }
+    #girl_img2_end {
+        position: relative;
+        top: 450px;
+        right: 70px;
+        width: 200px;
+    }
+    .content_right {
+        width: 500px;
+    }
+    #new-collection_it {
+        top: 850px;
+    }
+}
+@media(max-width: 1170px) {
+    .content_left h1 {
+        font-size: 45px;
+    }
+    .content_left button {
+        margin:50px 50px;
+    }
+    .content_left img {
+        left: -10px;
+    }
+    .content_left p {
+        text-align: left;
+    }
+}
+@media(max-width: 1066px) {
+    .content_right {
+        width: 350px;
+        height: 530px;
+    }
+    #girl_img {
+        width: 234px;
+        height: 352px;
+        margin: 20px;
+    }
+    #girl_img3 {
+        position: relative;
+        left: 80px;
+        top: 70px;
+        width: 100px;
+    }
+    #girl_img2_end {
+        position: relative;
+        top: 350px;
+        right: 50px;
+        height: 200px;
+        width: 150px;
+    }
+    .content_left {
+        top: 150px;
+    }
+    #new-collection_it {
+        top: 750px;
+    }
+}
+@media(max-width: 889px) {
+    .content_left {
+        left: 15%;
+    }
+    .content_left h1 {
+        font-size: 35px;
+    }
+    .content_left p {
+        font-size: 15px;
+    }
+    #new-collection_it {
+        top: 750px;
+    }
+}
+@media(max-width: 833px) {
+    #girl_img, #girl_img2_end, #girl_img3 {
+        display: none;
+    }
+    .content_right {
+        left: 0;
+        width: 100%;
+        height: 470px;
+    }
+    .content_left {
+        top: 70px;
+        left: 50%;
+        transform: translate(-50%);
+    }
+    #new-collection_it {
+        left: 35%;
+        text-align: center;
+        top: 600px;
+    }
+}
+@media(max-width: 443px) {
+    .content_left p {
+        width: 285px; 
+    }
+    .content_left h1 {
+        font-size: 20px;
+    }
+    .content_left p {
+        font-size: 15px;
+    }
+    .content_left button {
+        width: 173px;
+        height: 48px;
+        padding: 13px 13px;
+    }
+    .content_left img {
+        display: none;
+    }
+}
+/* миним экран */
+@media(max-width: 373px) {
+    .content_left { 
+        left: 180px;
+    }
+    .content_right {
+        width: 375px;
+    }
+    #new-collection_it {
+       left: 110px;
+    }
 }
 </style>

@@ -46,7 +46,6 @@
   margin: 0 auto;
   box-sizing: border-box;
 }
-
 body {
   font-family: "Indie Flower", cursive;
   background-color: transparent;
