@@ -1,30 +1,26 @@
 <template>
   <div>
-    <HeaderComp/>
-    <MainComp/>
+    <router-view></router-view>
   </div>
 </template>
 
 <script>
-import MainComp from "@/components/Main/MainComp.vue";
-import HeaderComp from "@/components/Header/HeaderComp.vue"
-
 export default {
   components: {
-    HeaderComp, MainComp
+    
   }
 }
 </script>
 
 <style>
-@import url('https://fonts.googleapis.com/css2?family=Wix+Madefor+Display:wght@400;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,600;1,300&family=Raleway:ital,wght@0,300;0,400;0,700;1,200&family=Roboto+Condensed:ital,wght@0,300;0,700;1,700&display=swap');
 *{
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  background-color: #29343E;
-  font-family: 'Wix Madefor Display';
+  font-family: 'Raleway';
 }
+a {text-decoration: none;}
 p {font-size: 16px; color: rgba(255, 255, 255, 0.7);}
 h1 {
   color: #FFBD4E;

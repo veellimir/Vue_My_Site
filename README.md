@@ -1,24 +1,13 @@
-# app
+### Сайт для Портфолио
 
-## Project setup
-```
-npm install
-```
+# Стек:
+    Vue 3;
 
-### Compiles and hot-reloads for development
-```
-npm run serve
-```
+# Готовые страница     
+    -Добавлена Шапка сайта
+    -Добавлен Основной контент
+    -Адаптировано под моб. версию до (344px)
 
-### Compiles and minifies for production
-```
-npm run build
-```
-
-### Lints and fixes files
-```
-npm run lint
-```
-
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+# Готовый функционал
+    -При клике на номер произойдёт звонок
+    -Добавлен роутинг страниц
