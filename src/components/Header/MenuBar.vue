@@ -28,11 +28,11 @@ export default {
 }
 .menu_popup {
     position: absolute;
-    right: 94px;
-    top: 90px;
-    width: 40vh;
-    height: 30vh;
-    background-color: #29343E;
+    left: 0;
+    top: 0;
+    width: 30vh;
+    height: 100vh;
+    background-color: #6E9C9F;
 }
 .block_service ul {
     list-style: none; 
