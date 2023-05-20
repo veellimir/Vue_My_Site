@@ -1,15 +1,14 @@
 <template>
     <div class="ds">
-        <HeaderComp />
+
         Магазин
     </div>
 </template>
 
 <script>
-import HeaderComp from '../Header/HeaderComp.vue';
 export default {
     components: {
-        HeaderComp
+        
     },
     data() {
         return {
@@ -21,7 +20,6 @@ export default {
     },
 };
 </script>
-
 <style scoped>
 .ds {
     background-color: aqua;
